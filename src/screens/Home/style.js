@@ -1,4 +1,4 @@
-import {StyleSheet, StatusBar} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 export const styles = StyleSheet.create({
   root: {
@@ -6,21 +6,16 @@ export const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  appBarContainer: {
-    width: '100%',
-    height: 56,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    paddingLeft: 52,
-    backgroundColor: '#ba1afa',
   },
   body: {
     width: '100%',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  safeContainer: {
+    width: '100%',
+    flexGrow: 1,
   },
   fabContainer: {
     width: 56,
@@ -40,5 +35,37 @@ export const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  listContentContainer: {
+    flexGrow: 1,
+    alignItems: 'center',
+    paddingTop: 2,
+  },
+  todoContainer: {
+    width: Dimensions.get('screen').width,
+    height: 48,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    backgroundColor: '#888888',
+  },
+  deleteContainer: {
+    width: 24,
+    height: 24,
+    position: 'absolute',
+    right: 0,
+    marginRight: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  deleteButton: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#ffffff',
   },
 });

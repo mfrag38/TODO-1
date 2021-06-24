@@ -1,1 +1,3 @@
-export const ADD_TODO = 'ADD_TODO';
+export const SET_TODOS = 'SET_TODOS';
+export const ADD_TODO_SET_TODO_TEXT = 'ADD_TODO_SET_TODO_TEXT';
+export const SET_TODO_IS_DONE = 'SET_TODO_IS_DONE';

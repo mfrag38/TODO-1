@@ -1,15 +1,15 @@
-import {SET_TODOS} from '../types';
+import {ADD_TODO_SET_TODO_TEXT} from '../types';
 
 const initState = {
-  todos: [],
+  todoText: '',
 };
 
 export default (state = initState, action) => {
   switch (action.type) {
-    case SET_TODOS:
+    case ADD_TODO_SET_TODO_TEXT:
       return {
         ...state,
-        todos: action.todos,
+        todoText: action.todoText,
       };
     default:
       return state;
